@@ -17,6 +17,8 @@ https://narainsreehith.medium.com/upload-image-video-to-flask-backend-from-react
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment
 3. Installing python3 in gitbash on Windows
 https://programmingwithjim.wordpress.com/2020/09/08/installing-python-3-in-git-bash-on-windows-10/
+4. Android Studio/Android 11 SDK
+https://developer.android.com/about/versions/11/setup-sdk#get-sdk
 
 ## Python Virtual Environment (backend/v_env)
 ### Commands
@@ -25,6 +27,8 @@ https://programmingwithjim.wordpress.com/2020/09/08/installing-python-3-in-git-b
 
 ## Running the App
 - if there are errors, try `npm install`
+- Need to install Android Studio or IOS simulator
+- To support web, may have to run the command `npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1` or call `npm install` on each module
 ### Commands
 Navigate to frontend/expo-app and run one of the following npm commands
 - `cd expo-app`
@@ -32,4 +36,3 @@ Navigate to frontend/expo-app and run one of the following npm commands
 - `npm run android`
 - `npm run ios` requires an iOS device or macOS for access to an iOS simulator
 - `npm run web`
-- may have to run the command `npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1` to support web
