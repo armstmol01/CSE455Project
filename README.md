@@ -3,11 +3,11 @@ Accept a photo from the client (frontend), send to the Flask server (backend),
 process image (perform Optical Character Recognition) and return result to client
 
 Design decision:
-- should the client call DeepL API to translate or should the Flask backend do this as part
+- should the client call DeepL API to translate or should the backend do this as part
 of image processing
 
 ## Tech Stack
-Expo frontend (React Native framework)
+Expo frontend (React Native framework running with npm)
 Flask backend (b/c it's python)
 
 Tutorials
@@ -20,5 +20,16 @@ https://programmingwithjim.wordpress.com/2020/09/08/installing-python-3-in-git-b
 
 ## Python Virtual Environment (backend/v_env)
 ### Commands
-source v_env/Scripts/activate
-deactivate
+`source v_env/Scripts/activate`
+`deactivate`
+
+## Running the App
+- if there are errors, try `npm install`
+### Commands
+Navigate to frontend/expo-app and run one of the following npm commands
+- `cd expo-app`
+- `npm start` you can open iOS, Android, or web from here, or run them directly with the commands below.
+- `npm run android`
+- `npm run ios` requires an iOS device or macOS for access to an iOS simulator
+- `npm run web`
+- may have to run the command `npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1` to support web
